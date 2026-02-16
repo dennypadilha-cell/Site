@@ -28,7 +28,7 @@
         <article>
 
             <p>
-                Olá estou apreendendo a criar uma pagina na internet, adicionado mais um texto.
+                Olá estou apreendendo a criar uma pagina na internet.
             </p>
 
         </article>
@@ -60,9 +60,33 @@
 
             <p>Tem um projeto em mente? Entre em contato comigo</p>
 
-            <address>
-                     E-mail <a href="mailto:denny.padilha@gmail.com">denny.padilha@gmail.com</a> <br>
-                     Telefone <a href="">48-000000000</a> <br>
+            <form action="">
+
+                <label for="nome">nome</label>
+                <input type="text" id="nome" name="nome" required> <br>
+                <label for="email">email</label>
+                <input type="text" id="email" name="email" required> <br>
+                <label for="telefone">telefone</label>
+                <input type="text" id="telefone" name="telefone"> <br>
+
+                <label for="assunto">assunto</label>
+                <select name="assunto" id="assunto">
+                <option value="orcamento">Orçamento</option>
+                <option value="duvida">Dúvida</option>
+                <option value="outro">Outro</option>
+                </select>
+
+                <br>
+
+                <label for="mensagem">mensagem</label>
+                <textarea name="mensagem" id="mensagem" cols="30" rows="10" required></textarea> <br>
+
+                <input type="checkbox" name="inscricao" id="inscricao">
+                <label for="inscricao">Deseja se inscrever no meu newsletter? Fique por dentro.</label>
+                <br>
+
+                <input type="submit" value="Enviar Mensagem">
+            </form>         
             </address>
         </section>
     </footer>
